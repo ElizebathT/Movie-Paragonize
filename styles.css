@@ -1,0 +1,300 @@
+.App {
+  font-family: sans-serif;
+  text-align: center;
+}
+
+body {
+  font-family: 'Open Sans', sans-serif; /* Apply the font to the entire app */
+}
+/* src/Navbar.css */
+.navbar {
+  background-color: #333;
+  padding: 10px;
+  color: white;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.navbar-brand {
+  font-size: 1.5em;
+}
+
+.navbar-nav {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+}
+
+.nav-item {
+  margin-left: 20px;
+}
+
+.nav-item a {
+  color: white;
+  text-decoration: none;
+}
+
+.nav-item a:hover {
+  text-decoration: underline;
+}
+
+/* src/SearchBar.css */
+.searchbar {
+  display: flex;
+  justify-content: center;
+  margin: 20px 0;
+}
+
+.search-input {
+  padding: 10px;
+  font-size: 16px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  width: 300px;
+}
+
+.search-button {
+  padding: 10px 20px;
+  font-size: 16px;
+  border: none;
+  border-radius: 4px;
+  background-color: #333;
+  color: white;
+  cursor: pointer;
+  margin-left: 10px;
+}
+
+.search-button:hover {
+  background-color: #555;
+}
+
+/* src/App.css */
+
+.movies-list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  justify-content: center;
+}
+
+.movie-card {
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  overflow: hidden;
+  width: 250px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s;
+}
+
+.movie-card:hover {
+  transform: scale(1.05);
+}
+
+.movie-poster {
+  width: 100%;
+  height: 300px;
+  object-fit: cover;
+}
+
+.movie-details {
+  padding: 10px;
+  text-align: center;
+}
+
+.movie-title {
+  font-size: 1.2em;
+  font-weight: bold;
+  margin: 10px 0;
+}
+
+.movie-release-date {
+  color: #666;
+  font-size: 0.9em;
+  margin-bottom: 10px;
+}
+
+
+.more-info-button {
+  margin-top: 10px;
+  padding: 10px;
+  background-color: #333;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.more-info-button:hover {
+  background-color: #555;
+}
+
+.movie-extra-info {
+  display: none;
+  margin-top: 10px;
+  text-align: left;
+  font-size: 0.9em;
+}
+
+.movie-card.expanded .movie-extra-info {
+  display: block;
+}
+
+
+/* src/App.css */
+
+.cardm {
+  display: flex;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  overflow: hidden;
+  width: 600px; /* Adjust as needed */
+  margin: 20px auto;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.posterm {
+  width: 200px; /* Adjust as needed */
+  height: 300px; /* Adjust as needed */
+  object-fit: cover;
+}
+
+.detailsm {
+  padding: 20px;
+  flex: 1; /* Allows details to take remaining space */
+  display: flex;
+  flex-direction: column;
+}
+
+.titlem {
+  font-size: 1.5em;
+  font-weight: 700;
+  margin-bottom: 10px;
+}
+
+.release-datem {
+  color: #666;
+  font-size: 1em;
+  margin-bottom: 10px;
+}
+
+.overviewm {
+  font-size: 1em;
+  color: #333;
+  margin-bottom: 10px;
+  flex: 1; /* Allows overview to grow */
+}
+
+.detailsm p {
+  margin: 5px 0;
+}
+
+.detailsm strong {
+  font-weight: bold;
+}
+
+.genres {
+  font-size: 1em;
+  color: #333;
+  margin-top: 10px;
+}
+
+.genres span {
+  display: inline-block;
+  background-color: #eee;
+  border-radius: 4px;
+  padding: 5px;
+  margin-right: 5px;
+}
+/* src/App.css */
+
+.compare-section {
+  margin: 20px;
+  text-align: center;
+}
+
+.comparison-controls {
+  display: flex;
+  justify-content: space-around;
+  margin-bottom: 20px;
+}
+
+.select-movie button {
+  margin: 5px;
+  padding: 10px;
+  cursor: pointer;
+}
+
+.select-movie .selected {
+  background-color: #007BFF;
+  color: white;
+}
+
+.movie-comparison {
+  display: flex;
+  justify-content: space-around;
+}
+
+.movie-comparison .movie-card {
+  width: 45%;
+}
+/* src/App.css */
+
+.suggestions-boxes {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  margin-top: 5px;
+  position: absolute;
+  background-color: white;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  width: 100%;
+}
+
+.suggestion-box {
+  display: flex;
+  align-items: center;
+  padding: 10px;
+  background-color: #f8f8f8;
+  border-radius: 4px;
+  cursor: pointer;
+  width: 200px; /* Adjust width as needed */
+  text-align: left;
+}
+
+.suggestion-box:hover {
+  background-color: #e0e0e0;
+}
+
+.suggestion-box.selected {
+  background-color: #007BFF;
+  color: white;
+}
+
+.suggestion-poster {
+  width: 50px;
+  height: auto;
+  margin-right: 10px;
+}
+
+.suggestion-title {
+  font-size: 14px;
+  font-weight: bold;
+  line-height: 1.2;
+}
+
+.search-input {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 10px;
+  box-sizing: border-box;
+  position: relative;
+}
+
+.select-movie {
+  position: relative;
+  width: 45%;
+}
